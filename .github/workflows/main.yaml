@@ -48,7 +48,7 @@ jobs:
       - run: echo "This is an integration step"
       - run: exit 1
         continue-on-error: true
-  zap_baseline:
+   zap_baseline:
     runs-on: ubuntu-20.04
     needs: test
     steps:
@@ -67,5 +67,4 @@ jobs:
     runs-on: ubuntu-20.04
     needs: integration
     steps:
-      - run: echo "This is a deploy step."
-
+      - run: echo "This is a deploy step.:"
